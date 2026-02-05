@@ -11,5 +11,5 @@ console.log(count);
 
 // let keyword does not allow redeclaration in the same scope
 let total = 1;
-let total = 2; // SyntaxError
+let total = 2; // Syntax Error
 console.log(total);
