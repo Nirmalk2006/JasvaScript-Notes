@@ -62,7 +62,7 @@ console.log(obj);
 let obj4 ={...obj1, ...obj2};
 console.log(obj4);
  
-               //Object destructuring  is way extract properties from an object and assign them to variables in a single statement.
+               //Object destructuring  is way extract properties from an object and assign them to variables in a single statement..
 
 let details = {
         fullname : "Nirmal Kharche",
