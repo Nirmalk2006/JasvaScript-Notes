@@ -33,3 +33,4 @@ let variable = function addone(num)   // In these case before declaration of the
 }
 console.log(variable(5));        
 
+// In these case before declaration of the function we cannot Initialize the function because of the variable is declared using let keyword and let keyword does not allow redeclaration in the same scope  
