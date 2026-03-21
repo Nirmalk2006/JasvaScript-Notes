@@ -1,0 +1,44 @@
+                                     //Loops in JavaScript
+//1. For Loop
+for(let i=0; i<5; i++){
+    console.log(i);  //output: 0, 1, 2, 3, 4
+}
+
+// nested for loop
+for(let i=1; i<=3; i++){
+    for(let j=1; j<=2; j++){
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+
+
+                                  //while loop
+                
+
+let j = 0
+while (j <=5) {
+    console.log(j);
+    j++
+} 
+                                 // By using array
+
+console.log(" ");
+let myarr = ["flash","Batman","Shaktiman"]
+let arr = 0;
+while(arr < myarr.length)
+{
+    console.log(`the value of arr is ${myarr[arr]}`)
+    arr = arr + 1;
+}
+
+                               // do-while loop
+
+console.log("  ");
+let k = 2
+
+do{
+
+    console.log(k);
+    k = k + 2;
+
+}  while(k<=10);
