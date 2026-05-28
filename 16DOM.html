@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="">
+    Hello
+    <span class="hide">Hidden</span>
+
+    <input type="password" name="" id="">
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+  <ul class="myul">
+    <li class="li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.</li>
+    <li class="li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.</li>
+    <li class="li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.</li>
+    <li class="li">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, cumque.</li>
+  </ul>
+  </div>
+  <script>
+    const box = document.getElementById('box');
+    console.log(box.innerText); // Output: "Hello" , textContent -> Reads all text in the DOM ,including hidden text, but does not return hidden text. It also returns the text as it appears in the DOM.and it ignores the css
+    console.log(box.textContent); // Output: "Hello" , innerText ->  Returns or sets the visible rendered text of an element as it appears to the user,it doesnt ignores the css
+    document.querySelectorAll('h2').forEach(h2 => {
+      console.log(h2.innerText);
+      console.log(h2.textContent);
+    });
+  </script>
+</body>
+</html>
