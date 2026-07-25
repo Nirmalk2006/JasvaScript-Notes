@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+    <img src="glogo.PNG" alt="Gym Logo" id="glogo">
+    <img src="npk.jpg" alt="Butterfly" id="npk" height="350px" width="350px">
+    </ul>
+    <script>
+        //there are many types of events : mouse Events, keyboard events, form events, window events, clipboars events, media events, drag and drop events and  pointer events.
+          document.getElementById('list').addEventListener('click',function(e){
+            console.log("Gym Logo Wheel Scroll");
+        },false)
+        document.getElementById('glogo').addEventListener('click',function(e){
+            console.log("Gym Logo Clicked");
+            e.stopPropagation() // stops the event from bubbling up to parent elements 
+                                // stops the event from capturing down to child elements
+        },false)
+        // Event bubbling is when an event on a child element automatically moves up to its parent elements and triggers their event handlers. TOP to BOTTOM
+        // Event capturing is when an event on a parent element automatically moves down to its child elements and triggers their event handlers. BOTTOM to TOP
+    </script>
+</body>
+</html>
