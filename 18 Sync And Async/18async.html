@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        // setTimeout(function(){
+        //     console.log("HEllo my name is NIrmal")
+        // },3000)
+        // setInterval(function(){
+        //     console.log("I am a software engineer") // asynchronous function in jsvascript is function that doesnt block the execution of other code while it is running. it is non-blocking
+        // },2000)  // synchronous function is function that blocks the execution of other code until it is completed. it is blocking
+        let starts;
+
+document.getElementById("start").addEventListener("click", () => {
+  starts = setInterval(() => {
+    console.log("Running...",Date.now());
+  }, 1000);
+});
+
+document.getElementById("stop").addEventListener("click", () => {
+    clearInterval(starts);
+});
+    </script>
+</body>
+</html>
