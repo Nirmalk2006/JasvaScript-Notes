@@ -1,3 +1,4 @@
-- [What is AJAX?](#what-is-ajax)
-- [Synchronous vs Asynchronous](#synchronous-vs-asynchronous)
-- [XMLHttpRequest (XHR)](#xmlhttprequest-xhr)
+- What is AJAX?(what-is-ajax)
+- Synchronous vs Asynchronous(#synchronous-vs-asynchronous)
+- XMLHttpRequest (XHR)(xmlhttprequest-xhr)
+- Promises
