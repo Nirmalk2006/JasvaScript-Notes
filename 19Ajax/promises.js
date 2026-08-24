@@ -33,6 +33,6 @@ promise3
     .then((user) => {
         console.log(user);
     })
-    .catch((error) => {
+    .catch((error) => {             // catch() method is used to handle an error when the prmise is rejected
         console.log(error);
     });
