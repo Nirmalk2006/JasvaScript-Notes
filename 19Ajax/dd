@@ -2,3 +2,4 @@
 - Synchronous vs Asynchronous(#synchronous-vs-asynchronous)
 - XMLHttpRequest (XHR)(xmlhttprequest-xhr)
 - Promises
+- Fetch
